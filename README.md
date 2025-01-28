@@ -4,12 +4,14 @@ An events app created using React, Redux, and Firestore. Exploring fundamentals 
 
 # Technologies and Resources Used
 
-Visual Studio Code - https://code.visualstudio.com/
-      PLUGINS USED:
-            - Material Icon Theme
-            - VS Code ES7+ React/Redux/React-Native/JS snippets
-React - https://react.dev/
-Vite - https://vite.dev/
-Node.js - https://nodejs.org/en
-Semantic UI - https://react.semantic-ui.com/
-cuid2 - https://github.com/paralleldrive/cuid2
+Visual Studio Code - https://code.visualstudio.com/  
+      PLUGINS USED:  
+            - Material Icon Theme  
+            - VS Code ES7+ React/Redux/React-Native/JS snippets  
+React - https://react.dev/  
+Vite - https://vite.dev/  
+Node.js - https://nodejs.org/en  
+Semantic UI - https://react.semantic-ui.com/  
+cuid2 - https://github.com/paralleldrive/cuid2  
+
+
