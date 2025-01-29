@@ -13,5 +13,5 @@ An events app created using React, Redux, and Firestore. Exploring fundamentals 
 - [Node.js](https://nodejs.org/en ) 
 - [Semantic UI](https://react.semantic-ui.com/  )
 - [cuid2](https://github.com/paralleldrive/cuid2  )
-
+- [React Router](https://reactrouter.com/home)
 
