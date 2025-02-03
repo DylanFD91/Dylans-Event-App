@@ -18,3 +18,4 @@ An events app created using React, Redux, and Firestore. Exploring fundamentals 
 - [React Redux](https://react-redux.js.org/) - Provides more functionality with Redux and React together.
 - [Redux Dev Tools](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) - A Chrome extension to help with debugging.
 - [React Hook Form](https://react-hook-form.com/) - easy to use form submission
+- [React Date Picker](https://www.npmjs.com/package/react-datepicker)
