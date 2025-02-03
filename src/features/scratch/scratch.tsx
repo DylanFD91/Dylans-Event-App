@@ -1,6 +1,7 @@
 import { Button } from "semantic-ui-react"
 import { useAppDispatch, useAppSelector } from "../../app/store/store"
 import { decrement, increment, incrementByAmount } from "./testSlice";
+import { openModal } from "../../app/common/modals/modalSlice";
 
 export default function () {
     const {data} = useAppSelector(state => state.test)
@@ -14,6 +15,7 @@ export default function () {
         <Button onClick={() => dispatch(increment())} color="green" content='increment'/>
         <Button onClick={() => dispatch(decrement())} color="red" content='decrement'/>
         <Button onClick={() => dispatch(incrementByAmount(5))} color="teal" content='increment by 5'/>
+        <Button onClick={() => dispatch(openModal({type: 'TestModal', data: data}))} color="teal" content='Open modal'/>
     </div>
   )
 }
