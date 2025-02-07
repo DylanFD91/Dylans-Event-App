@@ -7,7 +7,8 @@ An events app created using React, Redux, and Firestore. Exploring fundamentals 
 - [Visual Studio Code  ](https://code.visualstudio.com/) - This is the Code editor used.  
      - PLUGINS USED:  
             - Material Icon Theme  
-            - VS Code ES7+ React/Redux/React-Native/JS snippets  
+            - VS Code ES7+ React/Redux/React-Native/JS snippets
+            - ESLint  
 - [React ](https://react.dev/ ) -  
 - [Vite](https://vite.dev/)  -  
 - [Node.js](https://nodejs.org/en ) -  
@@ -18,3 +19,5 @@ An events app created using React, Redux, and Firestore. Exploring fundamentals 
 - [React Redux](https://react-redux.js.org/) - Provides more functionality with Redux and React together.
 - [Redux Dev Tools](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) - A Chrome extension to help with debugging.
 - [React Hook Form](https://react-hook-form.com/) - easy to use form submission
+- [React Date Picker](https://www.npmjs.com/package/react-datepicker)
+- [Firebase](https://firebase.google.com/)
