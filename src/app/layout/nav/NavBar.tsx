@@ -13,9 +13,9 @@ export default function NavBar() {
     function seedData() {
         sampleData.forEach(async event => {
             const {id, ...rest} = event;
-            await setDoc(doc(db, 'events', id, {
+            await setDoc(doc(db, 'events', id), {
                 ...rest
-            }))
+            })
         })
     }
 
