@@ -21,3 +21,4 @@ An events app created using React, Redux, and Firestore. Exploring fundamentals 
 - [React Hook Form](https://react-hook-form.com/) - easy to use form submission
 - [React Date Picker](https://www.npmjs.com/package/react-datepicker)
 - [Firebase](https://firebase.google.com/)
+- [Toastify](https://www.npmjs.com/package/react-toastify) - Adds toast notification library for notifications.
