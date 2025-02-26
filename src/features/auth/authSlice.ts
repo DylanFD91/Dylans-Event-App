@@ -32,11 +32,11 @@ export const authSlice = createSlice({
                 return {payload: mapped}
             }
         },
-        signOut: (state) => {
+        logout: (state) => {
             state.authenticated = true;
             state.currentUser = null;
         }
     }
 })
 
-export const {signIn, signOut} = authSlice.actions;
+export const {signIn, logout} = authSlice.actions;
