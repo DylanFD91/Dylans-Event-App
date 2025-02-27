@@ -1,4 +1,4 @@
-import { Button, Form } from "semantic-ui-react";
+import { Button, Form, Label } from "semantic-ui-react";
 import ModalWrapper from "../../app/common/modals/ModalWrapper";
 import { FieldValues, useForm } from "react-hook-form";
 import { closeModal } from "../../app/common/modals/modalSlice";
@@ -8,7 +8,7 @@ import { auth } from "../../app/config/firebase";
 import { signIn } from "./authSlice";
 
 export default function RegisterForm() {
-    const {register, handleSubmit, formState: {isSubmitting, isValid, isDirty, errors}} = useForm({
+    const {register, handleSubmit, setError, formState: {isSubmitting, isValid, isDirty, errors}} = useForm({
         mode:'onTouched'
     })
     const dispatch = useAppDispatch();
@@ -21,8 +21,10 @@ export default function RegisterForm() {
             })
             dispatch(signIn(userCreds.user))
             dispatch(closeModal());
-        } catch (error) {
-            console.log(error)
+        } catch (error: any) {
+            setError('root.serverError', {
+                type: '400', message: error.message
+            })
         }
     }
 
@@ -51,6 +53,13 @@ export default function RegisterForm() {
                 {...register('password', {required: true})}
                 error={errors.password && 'A password is Required'}
             />
+            {errors.root && (
+                <Label 
+                    basic color='red'
+                    style={{display: 'block', marginBottom: 10}}
+                    content={errors.root.serverError.message}
+                />
+            )}
             <Button 
                 loading={isSubmitting}
                 disabled={!isValid || !isDirty || isSubmitting}
