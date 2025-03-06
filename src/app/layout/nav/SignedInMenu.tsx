@@ -4,6 +4,7 @@ import { useAppSelector } from "../../store/store";
 import { signOut } from "firebase/auth";
 import { auth } from "../../config/firebase";
 
+// This navigation component is the part of the top right navigation bar and is dealing with the signed in user.
 
 export default function SignedInMenu() {
     const {currentUser} = useAppSelector(state => state.auth)
@@ -21,6 +22,7 @@ export default function SignedInMenu() {
                 <Dropdown.Menu>
                     <Dropdown.Item as={Link} to='/createEvent' text='Create event' icon='plus'/>
                     <Dropdown.Item text='My profile' icon='user'/>
+                    <Dropdown.Item as={Link} to='/account' text='My account' icon='settings'/>
                     <Dropdown.Item onClick={handleSignOut} text='Sign out' icon='power'/>
                 </Dropdown.Menu>
             </Dropdown>
