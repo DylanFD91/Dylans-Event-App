@@ -26,7 +26,7 @@ export default function ProfilePage() {
     <Grid>
         <Grid.Column width={16}>
             <ProfileHeader profile={profile}/>
-            <ProfileContent />
+            <ProfileContent profile={profile}/>
         </Grid.Column>
     </Grid>
   )
