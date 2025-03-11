@@ -2,6 +2,8 @@
 
 An events app created using React, Redux, and Firestore. Exploring fundamentals and deep diving some concepts. Overall the app is a basic event sign up app allowing you to host or show attendance to an event. This app is from a course on Udemy.
 
+The photo upload stuff is set up but they do not actually save to the database to avoid any billing related issues with the project.
+
 # Technologies and Resources Used
 
 - [Visual Studio Code  ](https://code.visualstudio.com/) - This is the Code editor used.  
@@ -22,3 +24,4 @@ An events app created using React, Redux, and Firestore. Exploring fundamentals 
 - [React Date Picker](https://www.npmjs.com/package/react-datepicker)
 - [Firebase](https://firebase.google.com/)
 - [Toastify](https://www.npmjs.com/package/react-toastify) - Adds toast notification library for notifications.
+- [filepond](https://pqina.nl/filepond/) - Adds a JavaScript library for uploading images and optimization.
